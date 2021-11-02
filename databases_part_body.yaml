@@ -1,0 +1,6 @@
+  '#databases_name#':
+    user: '#database_user#'
+    password: '#database_user_password#'
+    host: '#database_host#'
+    grant:
+      - ALL

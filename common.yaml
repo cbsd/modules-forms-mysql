@@ -1,0 +1,27 @@
+mysql::client::package_name: databases/mysql#mysql_ver#-client
+
+profiles::db::mysql::globals:
+  package_name: 'databases/mysql#mysql_ver#-server'
+#  root_password: super
+  create_root_my_cnf: false
+  remove_default_accounts: true
+  restart: true
+
+profiles::db::mysql::options:
+  client:
+    port: #port#
+    socket: #socket#
+  mysqld:
+    socket: #socket#
+    bind-address: #bind_address#
+    skip-networking: '#skip_networking#'
+    expire_logs_days: #expire_logs_days#
+    key_buffer_size: #key_buffer_size#
+    max_allowed_packet: #max_allowed_packet#
+    max_binlog_size: #max_binlog_size#
+    max_connections: #max_connections#
+    thread_cache_size: #thread_cache_size#
+    thread_stack: #thread_stack#
+    query_cache_limit: #query_cache_limit#
+    query_cache_size: #query_cache_size#
+    sort_buffer_size: #sort_buffer_size#
