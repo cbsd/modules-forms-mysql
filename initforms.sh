@@ -84,8 +84,8 @@ EOF
 # long description
 ${SQLITE3_CMD} ${FORM_PATH}/${HELPER}.sqlite << EOF
 BEGIN TRANSACTION;
-UPDATE system SET longdesc='\
-mysql is a multithreaded SQL database. \
+UPDATE system SET longdesc='\\
+mysql is a multithreaded SQL database. \\
 ';
 COMMIT;
 EOF
