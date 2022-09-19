@@ -22,6 +22,4 @@ profiles::db::mysql::options:
     max_connections: #max_connections#
     thread_cache_size: #thread_cache_size#
     thread_stack: #thread_stack#
-    query_cache_limit: #query_cache_limit#
-    query_cache_size: #query_cache_size#
     sort_buffer_size: #sort_buffer_size#
