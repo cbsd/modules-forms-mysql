@@ -70,7 +70,7 @@ EOF
 
 ${SQLITE3_CMD} ${FORM_PATH}/${HELPER}.sqlite << EOF
 BEGIN TRANSACTION;
-INSERT INTO system ( helpername, version, packages, have_restart ) VALUES ( 'mysql', '201607', 'databases/mysql13-server', 'mysql' );
+INSERT INTO system ( helpername, version, packages, have_restart ) VALUES ( 'mysql', '201607', 'databases/mysql13-server', 'mysql-server' );
 COMMIT;
 EOF
 

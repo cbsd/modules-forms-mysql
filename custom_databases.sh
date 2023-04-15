@@ -94,7 +94,7 @@ get_index()
 	local new_index
 
 	[ ! -r "${formfile}" ] && err 1 "formfile not readable: ${formfile}"
-	new_index=$( ${SQLITE3_CMD} ${formfile} 'SELECT group_id FROM forms WHERE groupname = '${groupname}' ORDER BY group_id DESC LIMIT 1' )
+	new_index=$( ${SQLITE3_CMD} ${formfile} "SELECT group_id FROM forms WHERE groupname = '${groupname}' ORDER BY group_id DESC LIMIT 1" )
 
 	case "${action}" in
 		add|create)
